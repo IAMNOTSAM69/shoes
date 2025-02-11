@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sports Shoes</title>
+    <link rel="stylesheet" href="sports.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background: linear-gradient(180deg, #1E1E1E, #3E3E3E);
+        }
+
+        * {
+            margin: 0 auto;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1F2833;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        #links {
+            display: flex;
+            gap: 20px;
+        }
+
+        #links a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #66FCF1;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links a:hover {
+            color: #45A29E;
+            border-bottom: 2px solid #66FCF1;
+        }
+
+        .contenttext {
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contenttext h2 {
+            color: #1F2833;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .sports-gallery {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .sports-item {
+            text-align: center;
+        }
+
+        .sports-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #footer {
+            font-size: 14px;
+            color: #C5C6C7;
+            text-align: center;
+            padding: 15px;
+            background: #1F2833;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+        }
+
+        #footer a {
+            color: #66FCF1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/shoes.png" alt="Shoe Haven Logo"/>
+            <div id="links">
+                <a href="index.html">Home</a>
+               <a href="sneakers.html" target="_blank">Sneakers</a>
+<a href="formal.html" target="_blank">Formal Shoes</a>
+<a href="sports.html" target="_blank">Sports Shoes</a>
+<a href="contact.html">Contact</a>
+            </div>
+        </div>
+        
+        <div class="contenttext">
+            <h2>Performance & Comfort</h2>
+            <p>Discover our range of sports shoes designed for maximum comfort and durability.</p>
+        </div>
+        
+        <div class="sports-gallery">
+            <div class="sports-item">
+                <img src="images/d1.jpg" alt="Running Shoes">
+                <p>High-Performance Running Shoes</p>
+            </div>
+            <div class="sports-item">
+                <img src="images/d2.jpg" alt="Training Shoes">
+                <p>Durable Training Sneakers</p>
+            </div>
+        </div>
+        
+        <div id="footer"><a href="#">Website realizado por</a></div>
+    </div>
+</body>
+</html>

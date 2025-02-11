@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exemplo</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background: linear-gradient(180deg, #1E1E1E, #3E3E3E);
+        }
+
+        * {
+            margin: 0 auto;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1F2833;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .logo {
+            height: 80px;
+        }
+
+        #links {
+            display: flex;
+            gap: 20px;
+        }
+
+        #links a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #66FCF1;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #links a:hover {
+            color: #45A29E;
+            border-bottom: 2px solid #66FCF1;
+        }
+
+        .contenttext {
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .contenttext h2 {
+            color: #1F2833;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .video {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .shop-now-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 12px 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: #66FCF1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .shop-now-btn:hover {
+            background: #45A29E;
+        }
+
+        #footer {
+            font-size: 14px;
+            color: #C5C6C7;
+            text-align: center;
+            padding: 15px;
+            background: #1F2833;
+            border-radius: 0 0 10px 10px;
+            margin-top: 20px;
+        }
+
+        #footer a {
+            color: #66FCF1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img class="logo" src="images/shoes.png" alt="Shoe Haven Logo"/>
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="sneakers.html" target="_blank">Sneakers</a>
+                <a href="formal.html" target="_blank">Formal Shoes</a>
+                <a href="sports.html" target="_blank">Sports Shoes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+     
+        <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="images/1200.webp">
+            <source media="(min-width: 1200px)" type="image/png" srcset="images/1200.png">
+            <source media="(min-width: 768px)" type="image/webp" srcset="images/768.webp">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/768.png">
+            <source media="(min-width: 576px)" type="image/webp" srcset="images/576.webp">
+            <source media="(min-width: 576px)" type="image/png" srcset="images/576.png">
+            <img src="images/1.jpg" alt="Shoe Collection">
+        </picture>
+
+        <div class="contenttext">
+            <h2>Welcome to Shoe Haven</h2>
+            <p>Your ultimate guide to different types of shoes! Explore our sections to learn more about sneakers, formal shoes, and sports footwear.</p>
+            
+            <video class="video" controls>
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+      
+       <picture>
+
+            <source media="(min-width: 768px)" type="image/webp" srcset="images/7682.webp">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/7682.png">
+            <source media="(min-width: 576px)" type="image/webp" srcset="images/5762.webp">
+            <source media="(min-width: 576px)" type="image/png" srcset="images/5762.png">
+            <img src="images/2.jpg" >
+
+    
+        <a href="shop.html" class="shop-now-btn">Shop Now</a>
+
+        <div id="footer"><a href="#">Website realizado por</a></div>
+    </div>
+</body>
+</html>
